@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".InputDataMhsActivity">
+
+    <TextView
+        android:id="@+id/tfJudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu Tambah Mahasiswa"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/edit_nrp"
+        android:layout_below="@id/tfJudul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Masukkan Nrp"
+        />
+
+    <EditText
+        android:id="@+id/edit_nama"
+        android:layout_below="@id/edit_nrp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Masukkan Nama"
+        />
+
+    <EditText
+        android:id="@+id/edit_jurusan"
+        android:layout_below="@id/edit_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Masukkan Jurusan"
+        android:layout_marginBottom="5dp"
+        />
+
+    <Button
+        android:id="@+id/btnKembali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_jurusan"
+        android:text="Kembali"
+        android:textAllCaps="false"
+        android:layout_alignParentLeft="true"
+
+        />
+
+    <Button
+        android:id="@+id/btnSimpanData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_jurusan"
+        android:text="Simpan Data"
+        android:textAllCaps="false"
+        android:layout_alignParentRight="true"
+
+        />
+
+
+
+
+</RelativeLayout>
