@@ -5,7 +5,6 @@ public class Input {
     public static final String KEY_NRP = "Nrp";
     public static final String KEY_NAMA = "Nama";
     public static final String KEY_JURUSAN = "Jurusan";
-
     public static final String SIMPAN_SUCCESS = "success";
 
 }

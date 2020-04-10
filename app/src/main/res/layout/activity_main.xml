@@ -8,11 +8,23 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tfJudul1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Selamat Datang"
+        android:textAppearance="bold"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
         android:id="@+id/tfJudul"
+        android:layout_below="@+id/tfJudul1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Web Service Data Mahasiswa"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="20dp"
         />
@@ -23,7 +35,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/tfJudul"
         android:text="Tambah Mahasiswa"
-        android:textSize="18sp"
+        android:layout_marginLeft="30dp"
+        android:drawableTop="@drawable/ic_person_add_black_24dp"
+        android:textSize="15sp"
         android:textAllCaps="false"
         android:layout_alignParentLeft="true"
         />
@@ -33,10 +47,49 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/tfJudul"
+        android:textSize="15sp"
+        android:textAllCaps="false"
+        android:layout_marginRight="30dp"
+        android:drawableTop="@drawable/ic_group_black_24dp"
         android:text="Tampil Mahasiswa"
-        android:textSize="18sp"
+        android:layout_alignParentRight="true"
+        />
+
+    <Button
+        android:id="@+id/btn_hapus_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_input_data"
+        android:text="Hapus Mahasiswa"
+        android:layout_marginLeft="30dp"
+        android:drawableTop="@drawable/ic_delete_black_24dp"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:layout_alignParentLeft="true"
+        />
+
+    <Button
+        android:id="@+id/btn_ubah_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_tampil_data"
+        android:text="Ubah Mahasiswa"
+        android:layout_marginRight="30dp"
+        android:drawableTop="@drawable/ic_edit_black_24dp"
+        android:textSize="16sp"
         android:textAllCaps="false"
         android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:id="@+id/tfFooter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Copyright | Dicky Ardianto 173040046 | 2020"
+        android:textAppearance="bold"
+        android:textSize="10sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
         />
 
 </RelativeLayout>
